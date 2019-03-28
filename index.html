@@ -10,13 +10,37 @@
 		<script src="main.js"></script>
 	</head>
 	<body>
+		<script type="text/javascript">
+			function sumar(){
+				let a = parseInt(document.getElementById('txtNumero1').value);
+				let b = parseInt(document.getElementById('txtNumero2').value);
+				document.getElementById('txtTotal').value = suma(a,b);
+			}
+			function restar(){
+				let a = parseInt(document.getElementById('txtNumero1').value);
+				let b = parseInt(document.getElementById('txtNumero2').value);
+				document.getElementById('txtTotal').value = resta(a,b);
+			}
+			function multiplicar(){
+				let a = parseInt(document.getElementById('txtNumero1').value);
+				let b = parseInt(document.getElementById('txtNumero2').value);
+				document.getElementById('txtTotal').value = multiplica(a,b);
+			}
+		</script>
+
 		<header class="cabecera">
 			Esta es una Cabecera
 		</header>
 		<div class="etiqueta">
 			Escenario de pruebas Git
 		</div>
-		Esto esta fuera de las etiquetas
+		Esto esta fuera de las etiquetas<br>
+		<label>Número 1</label> <input type="text" id="txtNumero1" /><br>
+		<label>Número 2</label> <input type="text" id="txtNumero2" /><br>
+		<label>Total</label> <input type="text" id="txtTotal" /><br>
+		<button id="btnSumar" onclick="sumar()">Suma</button>
+		<button id="btnRestar" onclick="restar()">Resta</button>
+		<button id="btnMultiplicar" onclick="multiplicar()">Multiplicar</button>
 		<footer class="pie">
 			Este es un pie
 		</footer>
