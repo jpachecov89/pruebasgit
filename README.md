@@ -1,2 +1,2 @@
 # pruebasgit
-Proyecto de prácticas Git
+Proyecto de prácticas Git by @Joel
